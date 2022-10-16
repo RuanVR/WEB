@@ -9,20 +9,49 @@
 <body>
 
     <div id="formulario">
-        <form action="">
-            Nome: <input type="text"> <br><br>
-            Senha: <input type="password"> <br><br>
-            Sistema Operacional: <input type="checkbox">Windows 7 <input type="checkbox">Windows 10 <input type="checkbox">Linux <input type="checkbox">Mac OS <br><br>
-            Processador: <input type="radio" name="processador">Intel <input type="radio" name="processador">AMD <input type="radio" name="processador">Cyrix <br><br>
-            Profissão:
-            <select name="profissao" id="profissao">
-                <option value="">Analista de Sistemas</option>
-                <option value="">Analista de suporte</option>
-            </select> <br><br>
-            Comentários: <textarea name="" id="" cols="40" rows="5"></textarea>
+        
+        <table cellspacing="10">
+            <form action="">
+                <tr>
+                    <td align="right">Nome:</td>
+                    <td><input type="text" size="50" name="nome"></td>
+                </tr>
 
-            <input type="submit" value="Enviar Dados">  <input type="reset" value="Limpar Dados">
+                <tr>
+                    <td align="right">Senha:</td>
+                    <td><input type="password" size="14" name="senha"></td>
+                </tr>
+
+                <tr>
+                    <td align="right">Sistema Operacional:</td>
+                    <td><input type="checkbox" name="so">Windows 7 <input type="checkbox" name="so">Windows 10 <input type="checkbox" name="so">Linux <input type="checkbox" name="so">Mac OS</td>
+                </tr>
+
+                <tr>
+                    <td align="right">Processador:</td>
+                    <td><input type="radio" name="processador">Intel <input type="radio" name="processador">AMD <input type="radio" name="processador">Cyrix</td>
+                </tr>
+
+                <tr>
+                    <td align="right">Profissão:</td>
+                    <td>
+                        <select name="profissao" id="profissao" size="2">
+                            <option value="">Analista de Sistemas</option>
+                            <option value="">Analista de suporte</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="right">Comentários:</td>
+                    <td><textarea name="comentario" id="comentario" cols="38" rows="5"></textarea></td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" value="Enviar Dados">  <input type="reset" value="Limpar Dados"></td>
+                </tr>
         </form>
+        </table>
     </div>
 
 </body>
