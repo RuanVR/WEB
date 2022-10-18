@@ -8,9 +8,45 @@
 </head>
 <body>
     
-    <thead><h1 align="center">Contato</h1></thead>
+    <thead><h1 align="center">Fale Conosco</h1></thead>
 
     <tbody>
+
+        <div id="formulario" align="center">
+            <form action="">
+               <table>
+                <font face="arial">
+                    <tr>
+                        <td>Nome</td>
+                        <td><input type="text" name="nome"></td>
+                    </tr>
+                    <tr>
+                        <td>Idade</td>
+                        <td><input type="radio" name="idade" value="crianca" checked="checked">0-17 <input type="radio" name="idade" value="adulto">18-65 <input type="radio" name="idade" value="idoso">60+</td>
+                    </tr>
+                    <tr>
+                        <td>Sexo</td>
+                        <td><input type="radio" name="sexo" value="masculino" checked="checked">Masculino <input type="radio" name="sexo" value="feminino">Feminino</td>
+                    </tr>
+                    <tr>
+                        <td>Endereço</td>
+                        <td><input type="text" name="endereco"></td>
+                    </tr>
+                    <tr>
+                        <td>Curso:</td>
+                        <td>
+                            <select name="curso" id="curso" size="1">
+                                <option value="">Ciência da Computação</option>
+                                <option value="">Sistema de Informação</option>
+                            </select>
+                        </td>
+                    </tr>
+                    
+                </font>
+               </table>
+            </form>
+        </div>
+
         <div align="center" id="imagem">
             <img src="../imagens/home.jpg" alt="">
         </div>
@@ -32,35 +68,10 @@
                 </tr>
             </table>
         </div>
-        
-        <div id="formulario" align="right">
-            <form action="">
-               <table>
-                <font face="arial">
-                    <tr>
-                        <td>Nome</td>
-                        <td><input type="text" name="nome"></td>
-                    </tr>
-                    <tr>
-                        <td>Idade</td>
-                        <td><input type="radio" name="idade" value="crianca" checked="checked">0-17 <input type="radio" name="idade" value="adulto">18-65 <input type="radio" name="idade" value="idoso">60+</td>
-                    </tr>
-                    <tr>
-                        <td>Sexo</td>
-                        <td><input type="radio" name="sexo" value="masculino" checked="checked">Masculino <input type="radio" name="sexo" value="feminino">Feminino</td>
-                    </tr>
-                    <tr>
-                        <td>Endereço</td>
-                        <td><input type="text" name="endereco"></td>
-                    </tr>
-                    
-                </font>
-               </table>
-            </form>
-        </div>
+
 
         <div id="link" >
-            <h2><a href="../formulario/formulario.html">link para formulário</a></h2>
+            <h2 align="center"><a href="../formulario/formulario.html">link para formulário</a></h2>
         </div>
     </tbody>
 
