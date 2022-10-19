@@ -1,0 +1,17 @@
+body{
+    color: black;
+    background-color: white;
+}
+
+h1{
+    color: blue;
+}
+
+h2{
+    color: red;
+    background-color: gray;
+}
+
+h3{
+    color: green;
+}

@@ -1,0 +1,19 @@
+body{
+    color: black;
+    background-image: url(../imagem/imageCSS.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+h1{
+    color: blue;
+}
+
+h2{
+    color: red;
+    background-color: gray;
+}
+
+h3{
+    color: green;
+}
