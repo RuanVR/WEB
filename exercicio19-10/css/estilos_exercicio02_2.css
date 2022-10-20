@@ -1,8 +1,6 @@
 body{
     color: black;
-    background-image: url(../imagem/imageCSS.jpg);
-    background-position: right;
-    background-size: contain;
+    background: white url(../imagem/imageCSS.jpg) repeat-x fixed right bottom;
 }
 
 h1{
