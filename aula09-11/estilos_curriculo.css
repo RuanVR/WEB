@@ -1,0 +1,38 @@
+body{
+    margin: auto;
+    width: 80%;
+    color: #444;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: #9f461f;
+    text-align: center;
+    font-size: 46px;
+    background-color: #fac877;
+    margin: 10px auto;
+    /*width: 80%;*/
+}
+
+h2{
+    color: red;
+    background-color: #c79090;
+    font-size: 36px;
+    border-bottom: solid 3px red;
+}
+
+ul{
+    padding-left: 0px;
+}
+li{
+    padding-left: 0px;
+    list-style-position: inside;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
