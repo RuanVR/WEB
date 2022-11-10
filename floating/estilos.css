@@ -1,0 +1,25 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+#titulo{
+    background-color: gray;
+    margin: 0;
+    padding: 2% 2% 3%;
+}
+
+#coluna1{
+    background-color: lightgray;
+    float: left;
+    width: 20%;
+    padding-top: 20px;
+}
+
+#coluna2{
+
+}
+
+#coluna3{
+    background-color: lightgray;
+}
