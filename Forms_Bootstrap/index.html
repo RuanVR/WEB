@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
 
     <title>Formulario</title>
 </head>
@@ -15,71 +14,80 @@
 
     <form class="form-horizontal">
 
-        <div class="form-group">
-            <label for="nome" class="col-sm-1 control-label">
+        <div class="form-group row">
+            <label for="nome" class="col-sm-1 control-label col-form-label">
                 <h3>Nome</h3>
             </label>
             <div class="col-sm-7">
                 <input type="text" name="nome" id="nome" class="form-control">
             </div>
-    
+
             <label for="cpf" class="col-sm-1 control-label">
                 <h3>CPF</h3>
             </label>
             <div class="col-sm-3">
-                <input type="text" name="cpf" id="cpf" class="form-control">
+                <input type="text" name="cpf" id="cpf" class="form-control" placeholder="999.999.999-99">
             </div>
         </div>
-        
 
-        <div class="form-group">
+
+        <div class="form-group row">
 
             <label for="email" class="col-sm-1 control-label">
                 <h3>E-mail</h3>
             </label>
-            <div class="">
-                 <input type="text" name="email" id="email" class="form-control">
+            <div class="col-sm-3">
+                <input type="text" name="email" id="email" class="form-control" placeholder="address@server">
             </div>
-           
-    
-            <label for="telefone">
+
+
+            <label for="telefone" class="col-sm-1 control-label">
                 <h3>Telefone</h3>
             </label>
-            <div>
-                 <input type="text" name="telefone" id="telefone" class="form-control">
+            <div class="col-sm-3">
+                <input type="text" name="telefone" id="telefone" class="form-control" placeholder="(XX) XXXX-XXXX">
             </div>
-           
-    
-            <label for="celular">
+
+
+            <label for="celular" class="col-sm-1 control-label">
                 <h3>Celular</h3>
             </label>
-            <div>
-                <input type="text" name="celular" id="celular" class="form-control">
+            <div class="col-sm-3">
+                <input type="text" name="celular" id="celular" class="form-control" placeholder="(XX) XXXXX-XXXX">
             </div>
-            
+
 
         </div>
 
-        <div class="form-group">
+        <div class="form-group row">
 
-            <label for="estado">
+            <label for="estado" class="col-sm-1 control-label col-form-label">
                 <h3>Estado</h3>
             </label>
-            <select name="estado" id="estado" size="1" class="form-control">
-                <option value="saopaulo">
-                    São Paulo
-                </option>
-            </select>
-    
-            <label for="cidade">
+            <div class="col-sm-5">
+                <select name="estado" id="estado" size="1" class="form-control">
+                    <option value="saopaulo">
+                        São Paulo
+                    </option>
+                </select>
+            </div>
+
+
+            <label for="cidade" class="col-sm-1 control-label col-form-label">
                 <h3>Cidade</h3>
             </label>
-            <select name="cidade" id="cidade" size="1" class="form-control">
-                <option value="voruporanga">
-                    Votuporanga
-                </option>
-            </select>
+            <div class="col-sm-5">
+                <select name="cidade" id="cidade" size="1" class="form-control">
+                    <option value="voruporanga">
+                        Votuporanga
+                    </option>
+                </select>
+            </div>
+        </div>
 
+        <div class="form-group row">
+            <button type="submit" class="btn btn-outline-success col-sm-2">Enviar</button>
+            <button type="reset" class="btn btn-outline-danger col-sm-2">Limpar</button>
         </div>
 
     </form>
