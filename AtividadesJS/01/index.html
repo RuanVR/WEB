@@ -1,14 +1,66 @@
-<html>
-    <head>
-        <script language="Javascript" src="script.js"></script>
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercicio 01</title>
+  <script language="Javascript" src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
 <body>
 
-<form>
-  Número 1: <input type="text" id="num1"><br><br>
-  Número 2: <input type="text" id="num2"><br><br>
-  <input type="button" value="Calcular" onclick="calculate()">
-</form>
+  <form>
+    <p>Número 1: <input type="text" id="num1"></p>
+    <p>Número 2: <input type="text" id="num2"></p>
+    <input type="button" value="Soma" onclick="soma()">
+    <input type="button" value="Multiplicação" onclick="multiplicacao()">
+    <input type="button" value="Divisão" onclick="divisao()">
+    <input type="button" value="Resto" onclick="resto()">
+
+    <table>
+      <tr>
+        <td>Operação</td>
+        <td>Valor</td>
+      </tr>
+
+      <tr>
+        <td>
+          Num1 + Num2
+        </td>
+        <td id="soma">
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          Num1 * Num2
+        </td>
+        <td id="multiplicacao">
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          Num1 / Num2
+        </td>
+        <td id="divisao">
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          Num1 % Num2
+        </td>
+        <td id="resto">
+        </td>
+      </tr>
+    </table>
+  </form>
 
 </body>
+
 </html>

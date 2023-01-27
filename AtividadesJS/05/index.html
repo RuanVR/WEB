@@ -1,27 +1,24 @@
-var salario = parseFloat(prompt("Informe o salário atual:"));
-var percentualAumento;
-var valorAumento;
-var novoSalario;
+<!DOCTYPE html>
+<html lang="en">
 
-if (salario <= 280) {
-  percentualAumento = 20;
-  valorAumento = salario * (percentualAumento/100);
-  novoSalario = salario + valorAumento;
-} else if (salario > 280 && salario <= 700) {
-  percentualAumento = 15;
-  valorAumento = salario * (percentualAumento/100);
-  novoSalario = salario + valorAumento;
-} else if (salario > 700 && salario <= 1500) {
-  percentualAumento = 10;
-  valorAumento = salario * (percentualAumento/100);
-  novoSalario = salario + valorAumento;
-} else {
-  percentualAumento = 5;
-  valorAumento = salario * (percentualAumento/100);
-  novoSalario = salario + valorAumento;
-}
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercicio 05</title>
+  <script language="Javascript" src="script.js"></script>
 
-document.write("Salário antes do reajuste: R$" + salario + "<br>");
-document.write("Percentual de aumento aplicado: " + percentualAumento + "% <br>");
-document.write("Valor do aumento: R$" + valorAumento + "<br>");
-document.write("Novo salário: R$" + novoSalario);
+</head>
+
+<body>
+  <p>Salário: <input type="text" id="salario"></p>
+  <input type="button" value="Calcular" onclick="calcular()">
+
+  <p>Salário antigo : </p> <div id="antes"></div>
+  <p>Percentual : <div id="perc"></div></p> 
+  <p>Aumento : <div id="aumento"></div></p> 
+  <p>Novo salário : <div id="novo"></div></p> 
+
+</body>
+
+</html>
