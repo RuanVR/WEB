@@ -1,0 +1,11 @@
+var dateInput = prompt("Digite uma data no formato dd/mm/aaaa:");
+var dateArray = dateInput.split("/");
+
+var day = dateArray[0];
+var monthNumber = dateArray[1];
+var year = dateArray[2];
+
+var monthNames = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"];
+var month = monthNames[monthNumber - 1];
+
+console.log(day + " de " + month + " de " + year);

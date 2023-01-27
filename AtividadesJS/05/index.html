@@ -1,0 +1,27 @@
+var salario = parseFloat(prompt("Informe o salário atual:"));
+var percentualAumento;
+var valorAumento;
+var novoSalario;
+
+if (salario <= 280) {
+  percentualAumento = 20;
+  valorAumento = salario * (percentualAumento/100);
+  novoSalario = salario + valorAumento;
+} else if (salario > 280 && salario <= 700) {
+  percentualAumento = 15;
+  valorAumento = salario * (percentualAumento/100);
+  novoSalario = salario + valorAumento;
+} else if (salario > 700 && salario <= 1500) {
+  percentualAumento = 10;
+  valorAumento = salario * (percentualAumento/100);
+  novoSalario = salario + valorAumento;
+} else {
+  percentualAumento = 5;
+  valorAumento = salario * (percentualAumento/100);
+  novoSalario = salario + valorAumento;
+}
+
+document.write("Salário antes do reajuste: R$" + salario + "<br>");
+document.write("Percentual de aumento aplicado: " + percentualAumento + "% <br>");
+document.write("Valor do aumento: R$" + valorAumento + "<br>");
+document.write("Novo salário: R$" + novoSalario);

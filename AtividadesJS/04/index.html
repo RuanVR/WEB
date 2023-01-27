@@ -1,0 +1,26 @@
+<html>
+<body>
+  <form>
+    <button type="button" onclick="createPage()">Criar</button>
+    <button type="button" onclick="writeMessage()">Escrever</button>
+    <button type="button" onclick="changeBackground()">Mudar</button>
+    <button type="button" onclick="closePage()">Fechar</button>
+  </form>
+  <script>
+    var newPage;
+    function createPage() {
+      newPage = window.open();
+    }
+    function writeMessage() {
+      newPage.document.write("Mensagem qualquer.");
+    }
+    function changeBackground() {
+      newPage.document.bgColor = "blue";
+      newPage.document.fgColor = "white";
+    }
+    function closePage() {
+      newPage.close();
+    }
+  </script>
+</body>
+</html>

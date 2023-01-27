@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function setBodyColor() {
+        var currentTime = new Date().getHours();
+        if (currentTime >= 6 && currentTime < 12) {
+          document.bgColor = "white";
+          document.fgColor = "black";
+        } else if (currentTime >= 12 && currentTime < 18) {
+          document.bgColor = "yellow";
+          document.fgColor = "black";
+        } else if (currentTime >= 18 && currentTime < 24) {
+          document.bgColor = "black";
+          document.fgColor = "white";
+        } else {
+          document.bgColor = "blue";
+          document.fgColor = "white";
+        }
+      }
+    </script>
+  </head>
+  <body onload="setBodyColor()">
+    
+  </body>
+</html>
